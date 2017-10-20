@@ -1,0 +1,47 @@
+piotr@piotr-VirtualBox:~$ pwd
+/home/piotr
+piotr@piotr-VirtualBox:~$ cd Pilpit
+bash: cd: Pilpit: Nie ma takiego pliku ani katalogu
+piotr@piotr-VirtualBox:~$ cd Pulpit
+piotr@piotr-VirtualBox:~/Pulpit$ cd calc
+piotr@piotr-VirtualBox:~/Pulpit/calc$ git commit -m "kalkulator"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	zmodyfikowany:    calc.c
+	deleted:          ../pierwszyprogram.c
+
+Untracked files:
+	calc.c~
+
+no changes added to commit
+piotr@piotr-VirtualBox:~/Pulpit/calc$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/calc$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	zmodyfikowany:    calc.c
+	new file:         calc.c~
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+piotr@piotr-VirtualBox:~/Pulpit/calc$ gcc calc.c -o calc.o
+piotr@piotr-VirtualBox:~/Pulpit/calc$ ./calc.o
+
+4+5
+Wynik dzialania to 9
+piotr@piotr-VirtualBox:~/Pulpit/calc$ ./calc.o
+4/2
+Wynik dzialania to 2
+piotr@piotr-VirtualBox:~/Pulpit/calc$ 
+
