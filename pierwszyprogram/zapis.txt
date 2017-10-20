@@ -1,0 +1,481 @@
+drwxrwxr-x  2 piotr piotr 4096 paź 20 08:49 pierwszyprogram
+-rw-rw-r--  1 piotr piotr  160 paź 20 09:27 pierwszyprogram.c
+drwxrwxr-x  2 piotr piotr 4096 paź 19 10:42 repozytorium
+piotr@piotr-VirtualBox:~/Pulpit$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	pierwszerepozytorium/
+	pierwszyprogram.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+piotr@piotr-VirtualBox:~/Pulpit$ git add .
+piotr@piotr-VirtualBox:~/Pulpit$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:         pierwszerepozytorium
+	new file:         pierwszyprogram.c
+
+piotr@piotr-VirtualBox:~/Pulpit$ git commit -n "implementacja pierwszego programuw języku C"
+error: pathspec 'implementacja pierwszego programuw języku C' did not match any file(s) known to git.
+piotr@piotr-VirtualBox:~/Pulpit$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb3.git
+piotr@piotr-VirtualBox:~/Pulpit$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/PiotrBakiewicz/wspolpb3.git/'
+piotr@piotr-VirtualBox:~/Pulpit$ git commit -m "implementacja pierwszego programu w języku C"
+[master (root-commit) 9c2eab8] implementacja pierwszego programu w języku C
+ 2 files changed, 11 insertions(+)
+ create mode 160000 pierwszerepozytorium
+ create mode 100644 pierwszyprogram.c
+piotr@piotr-VirtualBox:~/Pulpit$ add .
+Nie odnaleziono polecenia 'add', czy chodziło ci o:
+ Polecenie 'hadd' z pakietu 'root-system-bin' (universe)
+ Polecenie 'ddd' z pakietu 'ddd' (universe)
+ Polecenie 'adb' z pakietu 'android-tools-adb' (universe)
+ Polecenie 'adbd' z pakietu 'android-tools-adbd' (universe)
+ Polecenie 'atd' z pakietu 'at' (main)
+ Polecenie 'axd' z pakietu 'afnix' (universe)
+ Polecenie 'dd' z pakietu 'coreutils' (main)
+ Polecenie 'tdd' z pakietu 'devtodo' (universe)
+ Polecenie 'ldd' z pakietu 'libc-bin' (main)
+ Polecenie 'ad' z pakietu 'netatalk' (universe)
+ Polecenie 'and' z pakietu 'and' (universe)
+ Polecenie 'amd' z pakietu 'am-utils' (universe)
+ Polecenie 'aid' z pakietu 'id-utils' (universe)
+add: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit$ git add .
+piotr@piotr-VirtualBox:~/Pulpit$ git status
+On branch master
+nothing to commit, working directory clean
+piotr@piotr-VirtualBox:~/Pulpit$ git init
+Reinitialized existing Git repository in /home/piotr/Pulpit/.git/
+piotr@piotr-VirtualBox:~/Pulpit$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb3.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/PiotrBakiewicz/wspolpb3.git/'
+piotr@piotr-VirtualBox:~/Pulpit$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb3.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 413 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/PiotrBakiewicz/wspolpb3.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+piotr@piotr-VirtualBox:~/Pulpit$ nano pierwszyprogram.c
+piotr@piotr-VirtualBox:~/Pulpit$ git init cd pulpit
+usage: git init [-q | --quiet] [--bare] [--template=<template-directory>] [--shared[=<permissions>]] [directory]
+piotr@piotr-VirtualBox:~/Pulpit$ ls
+pierwsze  pierwszerepozytorium  pierwszyprogram  repozytorium
+piotr@piotr-VirtualBox:~/Pulpit$ touch pierwszyprogram.o
+piotr@piotr-VirtualBox:~/Pulpit$ cd pierwszyprogram
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ ls
+pierwszyprogram.c  pierwszyprogram.o
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o
+.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o
+.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc 
+gcc: fatal error: no input files
+compilation terminated.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc pierwszyprogram.c -o pierwszyprogram.o
+pierwszyprogram.c: In function ‘main’:
+pierwszyprogram.c:5:1: error: expected declaration specifiers before ‘puts’
+ puts("pierwszyprogram"):return 0;)
+ ^
+pierwszyprogram.c:5:34: error: expected declaration specifiers before ‘)’ token
+ puts("pierwszyprogram"):return 0;)
+                                  ^
+pierwszyprogram.c:8:1: error: expected declaration specifiers before ‘putchar’
+ putchar('p');
+ ^
+pierwszyprogram.c:9:1: error: expected declaration specifiers before ‘putchar’
+ putchar('s');
+ ^
+pierwszyprogram.c:9:1: error: expected ‘{’ at end of input
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o
+.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o
+.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\ pierwszyprogram.o
+. pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc pierwszyprogram.c -o pierwszyprogram.o
+pierwszyprogram.c: In function ‘main’:
+pierwszyprogram.c:5:1: error: expected declaration specifiers before ‘puts’
+ puts("pierwszyprogram");
+ ^
+pierwszyprogram.c:8:1: error: expected declaration specifiers before ‘putchar’
+ putchar('g');
+ ^
+pierwszyprogram.c:9:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\n');
+ ^
+pierwszyprogram.c:10:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\t');
+ ^
+pierwszyprogram.c:11:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\r');
+ ^
+pierwszyprogram.c:12:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\\');
+ ^
+pierwszyprogram.c:13:1: error: expected declaration specifiers before ‘return’
+ return 0;
+ ^
+pierwszyprogram.c:13:1: error: expected ‘{’ at end of input
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\ pierwszyprogram.o. pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc pierwszyprogram.c -o pierwszyprogram.o
+pierwszyprogram.c: In function ‘main’:
+pierwszyprogram.c:5:1: error: expected declaration specifiers before ‘puts’
+ puts("pierwszyprogram");
+ ^
+pierwszyprogram.c:8:1: error: expected declaration specifiers before ‘putchar’
+ putchar('g');
+ ^
+pierwszyprogram.c:9:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\n');
+ ^
+pierwszyprogram.c:10:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\t');
+ ^
+pierwszyprogram.c:11:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\r');
+ ^
+pierwszyprogram.c:12:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\\');
+ ^
+pierwszyprogram.c:13:1: error: expected declaration specifiers before ‘return’
+ return 0;
+ ^
+pierwszyprogram.c:13:1: error: expected ‘{’ at end of input
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\ pierwszyprogram.o. pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o
+.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc pierwszyprogram.c -o pierwszyprogram.o
+pierwszyprogram.c: In function ‘main’:
+pierwszyprogram.c:5:1: error: expected declaration specifiers before ‘puts’
+ puts("pierwszyprogram");
+ ^
+pierwszyprogram.c:8:1: error: expected declaration specifiers before ‘putchar’
+ putchar('g');
+ ^
+pierwszyprogram.c:9:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\n');
+ ^
+pierwszyprogram.c:10:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\t');
+ ^
+pierwszyprogram.c:11:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\r');
+ ^
+pierwszyprogram.c:12:1: error: expected declaration specifiers before ‘putchar’
+ putchar('\\');
+ ^
+pierwszyprogram.c:13:1: error: expected declaration specifiers before ‘return’
+ return 0;
+ ^
+pierwszyprogram.c:13:1: error: expected ‘{’ at end of input
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc pierwszyprogram.c -o pierwszyprogram.o
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\pierwszyprogram.o
+.pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ .\ pierwszyprogram.o. pierwszyprogram.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ ./pierwszyprogram.opierwszyprogram
+g
+\piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ 
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ ./pierwszyprogram.o
+pierwszyprogram
+g
+\piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ ./pierwszyprogram.o
+pierwszyprogram
+g
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/PiotrBakiewicz/wspolpb3.git/'
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb2.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:         pierwszyprogram.c
+	new file:         pierwszyprogram.c~
+	new file:         pierwszyprogram.o
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git log
+commit 9c2eab8037a0348836b799764c2b32d5dc8ee446
+Author: PiotrBakiewicz <mojave@onet.eu>
+Date:   Fri Oct 20 09:40:49 2017 +0200
+
+    implementacja pierwszego programu w języku C
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git commit -m "program w języku c"
+[master faafac3] program w języku c
+ 3 files changed, 31 insertions(+)
+ create mode 100644 pierwszyprogram/pierwszyprogram.c
+ create mode 100644 pierwszyprogram/pierwszyprogram.c~
+ create mode 100755 pierwszyprogram/pierwszyprogram.o
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb2.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+Counting objects: 7, done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.89 KiB | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/PiotrBakiewicz/wspolpb3.git
+   9c2eab8..faafac3  master -> master
+Branch master set up to track remote branch master from origin.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ mr
+Program mr nie jest obecnie zainstalowany. Możesz go zainstalować wpisując:
+sudo apt-get install myrepos
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git checkout
+D	pierwszyprogram.c
+Your branch is up-to-date with 'origin/master'.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ nano program.c
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ program.o
+program.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:         program.c
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ program.o
+program.o: nie znaleziono polecenia
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ cat program.c
+#include <stdio.h>
+int mnoz(int a, int b){return a*b;}
+int main(voit)
+{
+print("wynik mnożenia: %i/n", mnoz(4,5));
+return 0;} 
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc program.c -o program.o
+/tmp/ccrnljBS.o: In function `main':
+program.c:(.text+0x35): undefined reference to `print'
+collect2: error: ld returned 1 exit status
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:         program.c
+	new file:         program.c~
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ gcc program.c -o program.o
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ ./program.o
+wynik mnożenia: 20
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb2.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb5.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git commit -m
+error: switch `m' requires a value
+użycie: git commit [options] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <plik>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <plik>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:         program.c
+	new file:         program.c~
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	program.o
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:         program.c
+	new file:         program.c~
+	new file:         program.o
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:          ../pierwszyprogram.c
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git remote add origin https://github.com/PiotrBakiewicz/wspolpb5.git
+fatal: remote origin already exists.
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git push -u origin master
+Username for 'https://github.com': PiotrBakiewicz
+Password for 'https://PiotrBakiewicz@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git init
+Initialized empty Git repository in /home/piotr/Pulpit/pierwszyprogram/.git/
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	pierwszyprogram.c
+	pierwszyprogram.c~
+	pierwszyprogram.o
+	program.c
+	program.c~
+	program.o
+
+nothing added to commit but untracked files present (use "git add" to track)
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git add .
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:         pierwszyprogram.c
+	new file:         pierwszyprogram.c~
+	new file:         pierwszyprogram.o
+	new file:         program.c
+	new file:         program.c~
+	new file:         program.o
+
+piotr@piotr-VirtualBox:~/Pulpit/pierwszyprogram$ nano zapis.txt

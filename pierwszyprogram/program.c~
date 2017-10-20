@@ -1,0 +1,6 @@
+#include <stdio.h>
+int mnoz(int a, int b){return a*b;}
+int main(voit)
+{
+print("wynik mnożenia: %i\n", mnoz(4,5));
+return 0;} 
